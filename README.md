@@ -25,7 +25,7 @@ To create a development or production distributation image, execute the followin
 docker build --build-arg PORT=8080 -t chatapp-ms-auth:0.0.1-dev .
 
 # Production Image
-docker build --build-arg PORT=8080 NODE_ENV=production -t chatapp-ms-auth:0.0.1-prod .
+docker build --build-arg PORT=8080 --build-arg NODE_ENV_ARG=production -t chatapp-ms-auth:0.0.1-prod .
 ```
 
 Once the image is created, a container can be spawned by executing
